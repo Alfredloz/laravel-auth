@@ -76,10 +76,10 @@
             <div class="row">
                 <div class="col-xs-12 col-md-3 col-lg-3">
                     <ul class="list-unstyled text-primary">
-                        <li><i class="fas fa-tachometer-alt"></i> Dashboard</li>
-                        <li><i class="far fa-clipboard"></i> Posts</li>
-                        <li><i class="fas fa-clipboard-list"></i> Categories</li>
-                        <li><i class="fas fa-tags"></i> Tags</li>
+                        <li><a href="{{ route('admin.posts.index') }}"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                        <li><a href=""><i class="far fa-clipboard"></i> Posts</a></li>
+                        <li><a href=""><i class="fas fa-clipboard-list"></i> Categories</a></li>
+                        <li><a href=""><i class="fas fa-tags"></i> Tags</a></li>
                     </ul>
                 </div>
                 
