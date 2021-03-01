@@ -22,7 +22,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 // route admin sections
-Route::middleware('auth')->namespace('Admin')->prefix('admin')->group(function(){
+Route::middleware('auth')->namespace('Admin')->prefix('admin')->name('admin.')->group(function(){
     
     Route::resource('posts', 'PostController');
 });
