@@ -13,16 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PageController@home')->name('home');
+Route::get('/about', 'PageController@about')->name('contacts');
+Route::get('/contacts', 'PageController@contacts')->name('about');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
 
 // route admin sections
 Route::middleware('auth')->namespace('Admin')->prefix('admin')->name('admin.')->group(function(){
     
+    Route::get('/', 'HomeController@index')->name('index');
     Route::resource('posts', 'PostController');
 });
