@@ -20,7 +20,7 @@
             <td>{{$post->created_at}}</td>
             <td>{{$post->updated_at}}</td>
             <td>
-                <a href="{{ route('admin.posts.show', $post) }}" class="btn btn-info btn-block">View</a>
+                <a href="{{ route('admin.posts.show', $post->slug) }}" class="btn btn-info btn-block">View</a>
                 <a href="#" class="btn btn-warning btn-block">Edit</a>
                 <form action="#" method="POST">
                     @csrf

@@ -23,6 +23,6 @@ Auth::routes(['register' => false]);
 // route admin sections
 Route::middleware('auth')->namespace('Admin')->prefix('admin')->name('admin.')->group(function(){
     
-    Route::get('/', 'HomeController@index')->name('index');
+    Route::get('/', 'HomeController@index')->name('dashboard');
     Route::resource('posts', 'PostController');
 });
