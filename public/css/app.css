@@ -10944,3 +10944,23 @@ a.text-dark:focus {
   }
 }
 
+.welcome_box h1 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.welcome_box img {
+  margin: auto;
+  display: block;
+}
+
+.post_box h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+.post_box .post_card {
+  width: 70%;
+  margin: 2rem auto;
+}
+

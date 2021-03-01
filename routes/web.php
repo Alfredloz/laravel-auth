@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PageController@home')->name('home');
 Route::get('/about', 'PageController@about')->name('contacts');
 Route::get('/contacts', 'PageController@contacts')->name('about');
+Route::get('/posts', 'PageController@posts')->name('posts');
 
 Auth::routes(['register' => false]);
 

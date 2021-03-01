@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Post;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -17,7 +17,12 @@ class PageController extends Controller
     }
 
     public function contacts()
- {
-     return view('guest.contacts');
- }
+    {
+        return view('guest.contacts');
+    }
+    public function posts()
+    {   
+        $posts  = Post::latest()->get();
+        return view('guest.posts', compact('posts'));
+    }
 }

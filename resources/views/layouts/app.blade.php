@@ -32,9 +32,22 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
+                    <div class="navbar navbar-expand navbar-light bg-light">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item {{ Route::currentRouteName() === 'home'? 'active': '' }}">
+                                <a class="nav-link" href="{{ route('home') }}">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item {{ Route::currentRouteName() === 'posts'? 'active': '' }}">
+                                <a class="nav-link" href="{{ route('posts') }}">Posts</a>
+                            </li>
+                            <li class="nav-item {{ Route::currentRouteName() === 'about'? 'active': '' }}">
+                                <a class="nav-link" href="{{ route('about') }}">About</a>
+                            </li>
+                            <li class="nav-item {{ Route::currentRouteName() === 'contacts'? 'active': '' }}">
+                                <a class="nav-link" href="{{ route('contacts') }}">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">

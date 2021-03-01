@@ -6,3 +6,26 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// wecome page
+.welcome_box{
+    h1{
+        text-align: center;
+        margin: 1rem;
+    }
+    img{
+        margin: auto;
+        display: block;
+    }
+}
+// post page
+.post_box{
+    h2{
+        text-align: center;
+        margin: 1rem;
+    }
+    .post_card{
+        width: 70%;
+        margin: 2rem auto;
+    }
+}
